@@ -31,11 +31,11 @@
           <div class="header__logo__title">wecode</div>
         </div>
         <div class="header__menu">
-          <div class="header__center-menu">
-            <p class="header__center-menu__about">About</p>
-            <p class="header__center-menu__about">Interest</p>
-            <p class="header__center-menu__about">Links</p>
-          </div>
+          <ul class="header__center-menu">
+            <li>Profile</li>
+            <li>Interest</li>
+            <li>Links</;>
+          </ul>
           <div class="header__right-menu">
             <div class="header__right-menu__alarm">
               <i class="far fa-bell"></i>
@@ -48,7 +48,62 @@
       </header>
     </div>
     <div class="main__wrap">
-      <main class="main"></main>
+      <main class="main">
+        <aside class="aside">
+          <div class="aside__snb">
+            <p class="aside__snb__title">Settings</p>
+            <ul class="aside__snb__items">
+              <li class="active">Profile</li>
+              <li class="active">Interest</li>
+              <li class="active">Links</li>
+            </ul>
+          </div>
+        </aside>
+        <div class="main__boundary"></div>
+        <article class="article">
+          <p class="article__title">Profile</p>
+          <div class="article__profile__img-desc">
+            <div class="article__profile__img-wrap">
+              <img
+                src="assets/europe.jpg"
+                alt=""
+                class="article__profile__img"
+              />
+            </div>
+            <div class="article__profile__name">
+              <div class="article__profile__name-first-wrap">
+                <div class="article__profile__name-wrap">
+                  <label for="firstname">First name</label>
+                </div>
+                <div
+                  type="text"
+                  id="firstname"
+                  class="article__profile__name-first name"
+                >
+                  Seok
+                </div>
+              </div>
+              <div class="article__profile__name-last-wrap">
+                <div class="article__profile__name-wrap">
+                  <label for="lastname">Last name</label>
+                </div>
+                <div
+                  type="text"
+                  id="lastname"
+                  class="article__profile__name-last name"
+                >
+                  Jeong Do
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article__infos">
+            <div class="article__infos__hope-job">
+              
+            </div>
+          </div>
+        </article>
+      </main>
     </div>
   </body>
 </html>

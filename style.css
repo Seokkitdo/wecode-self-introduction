@@ -9,6 +9,7 @@ body {
   display: flex;
   width: 100%;
   background-color: #fcfcff;
+  border-bottom: 1px solid #efefff;
 }
 .header {
   display: flex;
@@ -16,7 +17,7 @@ body {
   align-items: center;
   width: 1440px;
   margin: 0 auto;
-  padding: 40px 50px;
+  padding: 20px 50px;
 }
 
 .header__logo {
@@ -51,7 +52,7 @@ body {
   align-items: center;
 }
 
-.header__center-menu > p {
+.header__center-menu > li {
   margin: 0 2rem;
   cursor: pointer;
 }
@@ -74,4 +75,123 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.main__wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 90px 216px 0;
+}
+
+.aside__snb__title {
+  font-size: 32px;
+  color: #202142;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.aside__snb__items > li {
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.active {
+  border: 1px solid #efefff;
+  border-radius: 20px;
+}
+
+.main__boundary {
+  height: 260px;
+  margin-left: 150px;
+  border: 1px solid #efefff;
+}
+
+.article {
+  padding: 77px;
+}
+
+.article__title {
+  font-size: 24px;
+  margin: 3px 0 30px 0;
+}
+
+.article__profile__img-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__profile__img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  padding: 16px;
+  border-radius: 50%;
+  border: 1px solid #efefff;
+  background-color: #ffffff;
+  box-shadow: 0 0 50px #ccc;
+}
+
+.article__profile__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+}
+
+.article__profile__name {
+  margin-left: 35px;
+}
+
+.article__profile__name-first-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.article__profile__name-last-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+article__profile__name-wrap {
+  padding: 3px;
+}
+
+.article__profile__name-wrap > label {
+  position: absolute;
+  left: 15px;
+  font-size: 13px;
+  padding: 0 6px;
+  background-color: #ffffff;
+}
+
+.article__profile__name-first-wrap,
+.article__profile__name-last-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  width: 185px;
+}
+
+.article__profile__name-first,
+.article__profile__name-last {
+  font-size: 16px;
+  padding: 23px 30px;
+  margin-top: 7px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
