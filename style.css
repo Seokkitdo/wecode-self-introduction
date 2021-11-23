@@ -136,7 +136,6 @@ body {
   align-items: center;
   width: 200px;
   height: 200px;
-  padding: 16px;
   border-radius: 50%;
   border: 1px solid #efefff;
   background-color: #ffffff;
@@ -144,8 +143,9 @@ body {
 }
 
 .article__profile__img {
-  width: 100%;
-  height: 100%;
+  width: 168px;
+  height: 168px;
+  padding: 16px;
   border-radius: 50%;
   border: none;
   object-fit: cover;
@@ -194,4 +194,71 @@ article__profile__name-wrap {
   margin-top: 7px;
   border-radius: 10px;
   border: 1px solid #ccc;
+}
+
+.article__infos {
+  margin-top: 60px;
+}
+
+.article__infos__profession-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.article__infos__profession-label {
+  position: relative;
+  padding: 3px;
+}
+
+.article__infos__profession-label > label {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 13px;
+  padding: 0 6px;
+  background-color: #ffffff;
+}
+
+.article__infos__profession-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.article__infos__profession {
+  font-size: 16px;
+  padding: 23px 30px;
+  margin-top: 7px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.info {
+  width: 420px;
+}
+
+.article__infos__about {
+  line-height: 1.4;
+}
+
+.article__links__title {
+  font-size: 24px;
+  margin: 30px 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  margin-right: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  background-color: #fcfcff;
 }
