@@ -6,10 +6,15 @@ body {
 }
 
 .header__wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   width: 100%;
   background-color: #fcfcff;
   border-bottom: 1px solid #efefff;
+  z-index: 1;
 }
 .header {
   display: flex;
@@ -116,6 +121,9 @@ body {
 }
 
 .article {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   padding: 77px;
 }
 
@@ -236,7 +244,8 @@ article__profile__name-wrap {
   width: 420px;
 }
 
-.article__infos__about {
+.article__infos__about,
+.article__infos__interest {
   line-height: 1.4;
 }
 
