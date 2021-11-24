@@ -12,9 +12,28 @@ const linksLocation = document.querySelector(
 
 const headerHeight = document.querySelector('.header__wrap').offsetHeight;
 const about = document.querySelector('.header__center-menu');
+const checkbox = document.querySelector('#checkbox');
+const header = document.querySelector('.header__wrap');
+const labeldark = document.querySelectorAll('.label_dark');
+const p = document.querySelectorAll('a > p');
+const footer = document.querySelector('footer');
+
+console.log(at);
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  header.classList.toggle('dark');
+  labeldark.forEach((item) => {
+    item.classList.toggle('dark');
+  });
+  p.forEach((item) => {
+    item.classList.toggle('dark');
+  });
+  footer.classList.toggle('dark');
+});
 
 about.addEventListener('click', (e) => {
-  console.log(typeof e.target.innerText);
+  console.log(e);
   if (e.target.innerText === 'about') {
     window.scrollTo({ top: aboutLocation - headerHeight, behavior: 'smooth' });
   } else if (e.target.innerText === 'Interest') {
