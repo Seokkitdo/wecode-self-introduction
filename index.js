@@ -18,8 +18,6 @@ const labeldark = document.querySelectorAll('.label_dark');
 const p = document.querySelectorAll('a > p');
 const footer = document.querySelector('footer');
 
-console.log(at);
-
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('dark');
   header.classList.toggle('dark');
